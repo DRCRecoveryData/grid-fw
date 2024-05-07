@@ -1,4 +1,4 @@
-esptool.py --chip esp32s3 --before=default_reset \
+esptool.py --chip esp32s3 -p COMxxx --before=default_reset \
 --after=no_reset write_flash --flash_mode dio --flash_size detect --flash_freq 80m \
 0x0 bootloader.bin \
 0x8000 partition-table.bin \
